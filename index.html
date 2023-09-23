@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Maintenance</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #222;
+        }
+
+        .maintenance-container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-family: 'Arial', sans-serif;
+            color: #ff5733;
+        }
+
+        @keyframes glitch {
+            0%, 100% {
+                text-shadow: -5px 0 #ff5733, 5px 0 #ff5733;
+                transform: skewX(2deg);
+            }
+            20%, 80% {
+                text-shadow: -5px 0 #00f3ff, 5px 0 #00f3ff;
+                transform: skewX(5deg);
+            }
+        }
+
+        p {
+            font-size: 18px;
+            font-family: 'Helvetica', sans-serif;
+            color: #fff;
+            animation: neon 1s ease-in-out infinite;
+        }
+
+        @keyframes neon {
+            0% {
+                color: #00f3ff;
+                text-shadow: 0 0 10px #00f3ff, 0 0 20px #00f3ff;
+            }
+            50% {
+                color: #fff;
+                text-shadow: none;
+            }
+            100% {
+                color: #00f3ff;
+                text-shadow: 0 0 10px #00f3ff, 0 0 20px #00f3ff;
+            }
+        }
+
+        .logo {
+            margin: 20px;
+            animation: rotate 2s linear infinite;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="maintenance-container">
+        <h1>This site is under maintenance</h1>
+        <p>We apologize for the inconvenience. Please check back later.</p>
+    </div>
+
+    <script>
+        // Optional JavaScript code can be added here if needed
+    </script>
+</body>
+</html>
